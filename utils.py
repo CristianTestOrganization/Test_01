@@ -35,3 +35,9 @@ def factorial(n: int) -> int:
     if n == 0:
         return 1
     return n * factorial(n - 1)
+
+
+
+def clamp(value: float, min_val: float, max_val: float) -> float:
+    """Return value clamped between min_val and max_val."""
+    return max(min_val, min(value, max_val))
